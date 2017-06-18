@@ -1,0 +1,30 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+#include <conio.h>
+
+#include "Container.h"
+
+void main()
+{
+	ifstream in("input.txt");
+	ofstream out("output.txt");
+
+	cout << "Start"<< endl;
+	
+	Container c;
+	Init(c);
+	In(c, in);
+
+    out << "Filled container. " << endl;
+	Out(c, out);
+
+	Clear(c);
+    out << "Empty container. " << endl;
+	Out(c, out);
+
+	cout << "Stop" << endl;
+
+	_getch();
+}
