@@ -4,6 +4,7 @@ using namespace std;
 #include "Shape.h"
 #include "QuadArr.h"
 #include "DiagArr.h"
+#include "TriagArr.h"
 
 //-------------------------------------------------------------------------------------------------
 // Ввод параметров обобщенной фигуры из файла
@@ -27,6 +28,11 @@ Shape* In(ifstream &in)
 		sp->k = Shape::DIAGARR;
 		In(sp->r, in);
 		return sp;
+	case 3:
+		sp = new Shape;
+		sp->k = Shape::TRIAGARR;
+		In(sp->w, in);
+		return sp;
 	default:
 		return 0;
 	}
@@ -44,6 +50,9 @@ void Out(Shape &s, ofstream &out)
 		break;
 	case Shape::QUADARR:
 		Out(s.t, out);
+		break;
+	case Shape::TRIAGARR:
+		Out(s.w, out);
 		break;
 	default:
 		out << "Некорректные данные!" << endl;

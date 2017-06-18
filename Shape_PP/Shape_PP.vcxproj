@@ -97,12 +97,15 @@
     <ClCompile Include="QuadArr_In.cpp" />
     <ClCompile Include="QuadArr_Out.cpp" />
     <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="TriagArr_In.cpp" />
+    <ClCompile Include="TriagArr_Out.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Container.h" />
     <ClInclude Include="DiagArr.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="QuadArr.h" />
+    <ClInclude Include="TriagArr.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
