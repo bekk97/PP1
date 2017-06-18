@@ -3,6 +3,10 @@
 
 #include "DiagArr.h"
 #include "QuadArr.h"
+<<<<<<< HEAD
+=======
+#include "TriagArr.h"
+>>>>>>> v2
 
 //-------------------------------------------------------------------------------------------------
 // структура, обобщающая все имеющиеся фигуры
@@ -10,7 +14,11 @@
 struct Shape
 {
 	// значения ключей для каждой из фигур
+<<<<<<< HEAD
 	enum key {DIAGARR, QUADARR};
+=======
+	enum key {DIAGARR, QUADARR,TRIAGARR};
+>>>>>>> v2
 
 	// ключ
 	key k;
@@ -20,6 +28,10 @@ struct Shape
 	{
 		DiagArr r;
 		QuadArr t;
+<<<<<<< HEAD
+=======
+		TriagArr w;
+>>>>>>> v2
 	};
 };
 
