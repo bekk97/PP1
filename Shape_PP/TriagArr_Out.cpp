@@ -18,5 +18,6 @@ void Out(TriagArr &w, ofstream &out)
 	out << endl;
 	w.prov = NULL;
 	w.perepoln = false;
+	UnitTest_Out(w, out);
 
 }
