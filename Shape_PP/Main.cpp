@@ -1,15 +1,10 @@
-// PP7A.cpp: определяет точку входа для консольного приложения.
-//
-
-#include "stdafx.h"
-#include "Container.h"
 #include <iostream>
 #include <fstream>
-#include <conio.h>
-
-
 using namespace std;
 
+#include <conio.h>
+
+#include "Container.h"
 
 void main(int argc, char* const argv[])
 {
@@ -26,17 +21,17 @@ void main(int argc, char* const argv[])
 	ifstream in(argv[1]);
 	ofstream out(argv[2]);
 
-	cout << "Старт" << endl;
-
+	cout << "Старт"<< endl;
+	
 	Container c;
 	Init(c);
 	In(c, in);
 
-	out << "Заполненный контейнер. " << endl;
+    out << "Заполненный контейнер. " << endl;
 	Out(c, out);
 
 	Clear(c);
-	out << "Пустой контейнер. " << endl;
+    out << "Пустой контейнер. " << endl;
 	Out(c, out);
 
 	cout << "Стоп" << endl;

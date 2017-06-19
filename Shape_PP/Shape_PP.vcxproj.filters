@@ -42,36 +42,6 @@
     <ClCompile Include="QuadArr_Out.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TriagArr_In.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TriagArr_Out.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DiagArr_UnitTest_In.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DiagArr_UnitTest_Out.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QuadArr_UnitTest_In.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QuadArr_UnitTest_Out.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TriagArr_UnitTest_In.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TriagArr_UnitTest_Out.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Defence_In.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Defence_Out.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Container.h">
@@ -84,12 +54,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QuadArr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TriagArr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Defence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

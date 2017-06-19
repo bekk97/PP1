@@ -12,5 +12,4 @@ void Out(Container &c, ofstream &out)
 		out << i << ": ";
 		Out(*(c.cont[i]), out);
 	}
-	MultiMethod(c, out);
 }
