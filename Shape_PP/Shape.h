@@ -4,6 +4,7 @@
 #include "DiagArr.h"
 #include "QuadArr.h"
 #include "TriagArr.h"
+#include "Defence.h"
 
 //-------------------------------------------------------------------------------------------------
 // структура, обобщающая все имеющиеся фигуры
@@ -22,6 +23,7 @@ struct Shape
 		DiagArr r;
 		QuadArr t;
 		TriagArr w;
+		Defence d;
 	};
 };
 

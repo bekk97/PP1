@@ -2,9 +2,15 @@
 using namespace std;
 
 #include "TriagArr.h"
+#include "Defence.h"
+
 
 void In(TriagArr &w, ifstream &in)
 {
+	Defence def;
+	Defence_In(def, in, 2);
+	if (def.endoffile == false)
+	{
 	for (int i = 0; i < 6; i++)
 		in >> w.t[i];
 	in >> w.prov;
@@ -34,3 +40,10 @@ void In(TriagArr &w, ifstream &in)
 	}
 	UnitTest_In(w, in);
 }
+	else
+	{
+		return;
+	}
+
+}
+

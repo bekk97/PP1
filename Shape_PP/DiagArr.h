@@ -23,4 +23,5 @@ void In(DiagArr &r, ifstream &in);
 void Out(DiagArr &r, ofstream &out);
 void UnitTest_In(DiagArr &r, ifstream &in);
 void UnitTest_Out(DiagArr &r, ofstream &out);
+
 #endif
