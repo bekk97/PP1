@@ -18,5 +18,6 @@ void In(QuadArr &t, ifstream &in)
 		t.perepoln = true;
 		while (t.prov != '&')
 			in >> t.prov;
+		UnitTest_In(t, in);
 	}
 }

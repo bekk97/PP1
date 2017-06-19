@@ -18,5 +18,6 @@ void Out(QuadArr &t, ofstream &out)
 	out << endl;
 	t.prov = NULL;
 	t.perepoln = false;
+	UnitTest_Out(t, out);
 
 }

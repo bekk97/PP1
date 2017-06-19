@@ -32,4 +32,5 @@ void In(TriagArr &w, ifstream &in)
 			m++;
 		}
 	}
+	UnitTest_In(w, in);
 }

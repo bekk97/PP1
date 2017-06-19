@@ -42,15 +42,30 @@
     <ClCompile Include="QuadArr_Out.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-=======
     <ClCompile Include="TriagArr_In.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TriagArr_Out.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
->>>>>>> v2
+    <ClCompile Include="DiagArr_UnitTest_In.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagArr_UnitTest_Out.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadArr_UnitTest_In.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadArr_UnitTest_Out.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TriagArr_UnitTest_In.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TriagArr_UnitTest_Out.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Container.h">
@@ -65,12 +80,9 @@
     <ClInclude Include="QuadArr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
-=======
     <ClInclude Include="TriagArr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
->>>>>>> v2
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

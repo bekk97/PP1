@@ -35,4 +35,6 @@ void In(DiagArr &r, ifstream &in)
 	{
 		r.Arr[i][i] = r.b[i];
 	}
+
+	UnitTest_In(r, in);
 }
