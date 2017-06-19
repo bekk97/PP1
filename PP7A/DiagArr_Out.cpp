@@ -21,5 +21,4 @@ void Out(DiagArr &r, ofstream &out)
 	out << endl;
 	r.prov = NULL;
 	r.perepoln = false;
-	UnitTest_Out(r, out);
 }

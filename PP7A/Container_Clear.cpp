@@ -1,28 +1,23 @@
-#ifndef __QuadArr__
-#define __QuadArr__
+#include <fstream>
+using namespace std;
 
+#include "Container.h"
 
 //-------------------------------------------------------------------------------------------------
-// Треугольник
+// Инициализация контейнера
 //-------------------------------------------------------------------------------------------------
-struct QuadArr
+void Init(Container &c)
 {
-	// стороны
-	int a[3][3];
-	char prov;
-	bool perepoln;
-	float Check;
-	bool Test;
-	float actualCheck;
-};
+	c.len = 0;
+}
 
 //-------------------------------------------------------------------------------------------------
-// Заголовки функций
+// Очистка контейнера от элементов (освобождение памяти)
 //-------------------------------------------------------------------------------------------------
-void In(QuadArr  &t, ifstream &ist);
-void Out(QuadArr  &t, ofstream &ofst);
-void UnitTest_In(QuadArr &t, ifstream &in);
-void UnitTest_Out(QuadArr &t, ofstream &out);
+void Clear(Container &c)
+{
+	for (int i = 0; i < c.len; i++)
+		delete c.cont[i];
 
-#endif
-
+	c.len = 0;
+}

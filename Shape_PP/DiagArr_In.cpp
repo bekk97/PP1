@@ -2,6 +2,7 @@
 using namespace std;
 
 #include "DiagArr.h"
+#include "Defence.h"
 
 //-------------------------------------------------------------------------------------------------
 // ¬вод параметров пр€моугольника из файла
@@ -10,6 +11,11 @@ using namespace std;
 
 void In(DiagArr &r, ifstream &in)
 {
+	Defence def;
+	Defence_In(def, in, 2);
+
+	if (def.endoffile == false)
+	{
 	r.perepoln = false;
 	for (int i = 0; i < 3; i++)
 		in >> r.b[i];
@@ -35,4 +41,12 @@ void In(DiagArr &r, ifstream &in)
 	{
 		r.Arr[i][i] = r.b[i];
 	}
+
+	UnitTest_In(r, in);
+}
+	else
+	{
+		return;
+	}
+
 }

@@ -1,14 +1,13 @@
-#ifndef __DiagArr__
-#define __DiagArr__
+#ifndef __TriagArr__
+#define __TriagArr__
 
 //-------------------------------------------------------------------------------------------------
-// Прямоугольник
+// Треугольник
 //-------------------------------------------------------------------------------------------------
-struct DiagArr
+struct TriagArr
 {
-	// ширина, высота
-	int b[3];
-	int Arr[3][3];
+	int t[6];
+	int Array[3][3];
 	char prov;
 	bool perepoln;
 	float Check;
@@ -19,9 +18,9 @@ struct DiagArr
 //-------------------------------------------------------------------------------------------------
 // Заголовки функций
 //-------------------------------------------------------------------------------------------------
-void In(DiagArr &r, ifstream &in);
-void Out(DiagArr &r, ofstream &out);
-void UnitTest_In(DiagArr &r, ifstream &in);
-void UnitTest_Out(DiagArr &r, ofstream &out);
+void In(TriagArr  &w, ifstream &ist);
+void Out(TriagArr  &w, ofstream &ofst);
+void UnitTest_In(TriagArr &w, ifstream &in);
+void UnitTest_Out(TriagArr &w, ofstream &out);
 
 #endif

@@ -1,6 +1,7 @@
 #ifndef __Container__
 #define __Container__
-
+using namespace std;
+#include <fstream>
 //-------------------------------------------------------------------------------------------------
 // Ссылка на описание геометрической фигуры. Знание структуры самой фигуры 
 // для представленной реализации контейнера не требуется
@@ -13,11 +14,11 @@ struct Shape;
 struct Container
 {
 	// максимальная длина
-	enum {max_len = 100};
-	
+	enum { max_len = 100 };
+
 	// текущая длина
 	int len;
-	
+
 	Shape *cont[max_len];
 };
 
@@ -29,5 +30,6 @@ void Clear(Container &c);
 
 void In(Container &c, ifstream &in);
 void Out(Container &c, ofstream &out);
+void MultiMethod(Container &c, ofstream &out);
 
 #endif

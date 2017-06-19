@@ -1,27 +1,32 @@
-#ifndef __DiagArr__
-#define __DiagArr__
+#ifndef __Shape__
+#define __Shape__
+
+#include "DiagArr.h"
+#include "QuadArr.h"
 
 //-------------------------------------------------------------------------------------------------
-// Прямоугольник
+// структура, обобщающая все имеющиеся фигуры
 //-------------------------------------------------------------------------------------------------
-struct DiagArr
+struct Shape
 {
-	// ширина, высота
-	int b[3];
-	int Arr[3][3];
-	char prov;
-	bool perepoln;
-	float Check;
-	bool Test;
-	float actualCheck;
+	// значения ключей для каждой из фигур
+	enum key { DIAGARR, QUADARR };
+
+	// ключ
+	key k;
+
+	// используемые альтернативы, простейшая реализация
+	union
+	{
+		DiagArr r;
+		QuadArr t;
+	};
 };
 
 //-------------------------------------------------------------------------------------------------
 // Заголовки функций
 //-------------------------------------------------------------------------------------------------
-void In(DiagArr &r, ifstream &in);
-void Out(DiagArr &r, ofstream &out);
-void UnitTest_In(DiagArr &r, ifstream &in);
-void UnitTest_Out(DiagArr &r, ofstream &out);
+Shape *In(ifstream &in);
+void Out(Shape &s, ofstream &out);
 
 #endif
